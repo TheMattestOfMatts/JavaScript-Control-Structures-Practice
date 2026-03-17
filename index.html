@@ -17,7 +17,7 @@
             if (schoolId.toLowerCase() === "yes") {
                 entryCheck = "Welcome to the event!";
             } else {
-                entryCheck = "";
+                entryCheck = "Please show your ID.";
             }
 
             //number 2
@@ -37,11 +37,11 @@
 
             if (score < 0 || score > 100) {
                 quiz = "Invalid score";
-            } else if (score >= 90 && score <= 100) {
+            } else if (score >= 90) {
                 quiz = "Excellent";
-            } else if (score >= 75 && score <= 89) {
+            } else if (score >= 75) {
                 quiz = "Good job";
-            } else if (score >= 60 && score <= 74) {
+            } else if (score >= 60) {
                 quiz = "You passed";
             } else {
                 quiz = "You need to review";
